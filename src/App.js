@@ -46,15 +46,6 @@ if (data.name){
       img:data.weather[0].icon,
       message:data.message
     })
-
-    let url1 = `https://api.unsplash.com/photos/random?orientation=landscape&query=${data.weather[0].main}&client_id=u5GkLdG0m9Izf8GiqLuqu9TctrIWVMZFemY2FP_Sq4A`;
-    const res1 = await fetch(url1);
-    const data1 = await res1.json();
-    if (data1.urls.regular){
-      document.body.style.backgroundImage = `url(${data1.urls.regular})`;
-    }
-    
-    console.log(data1)
 }
 
 else if (data.message){
