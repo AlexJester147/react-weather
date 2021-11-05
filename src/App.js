@@ -88,9 +88,6 @@ else if (data.message){
     })
   }
 
-
-
-
   }
   
 
