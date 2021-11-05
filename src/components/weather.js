@@ -7,7 +7,7 @@ class Weather extends React.Component{
       {this.props.city &&
       <div>
       <p>Местоположение : {this.props.city}, {this.props.country}</p>
-      <p>Широта : {this.props.lat}, долгота {this.props.lon}:</p>
+      <p>Широта : {this.props.lat}, долгота : {this.props.lon}</p>
        <p>Погода : {this.props.weather}</p>
        <p>Давление : {this.props.pressure}</p>   
        <div className="weather-temp__wrap">
